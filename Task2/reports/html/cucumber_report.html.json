@@ -1,0 +1,457 @@
+[
+  {
+    "keyword": "Feature",
+    "type": "feature",
+    "description": "",
+    "line": 1,
+    "name": "Combined List View",
+    "uri": "/Users/siddarthkala/code/siddharth-kala/Task2/features/2_listView.feature",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Able to view correct data in list view",
+        "tags": [
+          {
+            "name": "@ListView",
+            "astNodeId": "9e28a88b-b67b-425f-80a5-863dff539b44"
+          }
+        ],
+        "id": "combined-list-viewable-to-view-correct-data-in-list-view",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "User is on landing page",
+            "result": {
+              "status": "passed",
+              "duration": 226000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "User clicks balance button",
+            "result": {
+              "status": "passed",
+              "duration": 2097000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "User clicks expense button",
+            "result": {
+              "status": "passed",
+              "duration": 1556000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "User adds an expense of 300",
+            "result": {
+              "status": "passed",
+              "duration": 2439000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "User choose a category of Clothes",
+            "result": {
+              "status": "passed",
+              "duration": 3399000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "User should view the balance is reduced with 300",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "The sum total and view of records should be correct",
+            "result": {
+              "status": "passed",
+              "duration": 1366000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ],
+    "id": "combined-list-view",
+    "metadata": {
+      "browser": {
+        "name": "No metadata.browser.name available",
+        "version": "No metadata.browser.version available"
+      },
+      "device": "Device name not known",
+      "platform": {
+        "name": "Android",
+        "version": "Version not known"
+      }
+    }
+  },
+  {
+    "keyword": "Feature",
+    "type": "feature",
+    "description": "",
+    "line": 1,
+    "name": "Expense",
+    "uri": "/Users/siddarthkala/code/siddharth-kala/Task2/features/0_expense.feature",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Able to add Expense",
+        "tags": [
+          {
+            "name": "@Expense",
+            "astNodeId": "f020253c-6c0c-4f8f-80af-46ac527771f7"
+          }
+        ],
+        "id": "expenseable-to-add-expense",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "User is on landing page",
+            "result": {
+              "status": "passed",
+              "duration": 8418000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "User clicks expense button",
+            "result": {
+              "status": "passed",
+              "duration": 1950000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "User adds an expense of 250",
+            "result": {
+              "status": "passed",
+              "duration": 1349000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "User choose a category of Car",
+            "result": {
+              "status": "passed",
+              "duration": 3197000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "User should view the balance is reduced with 250",
+            "result": {
+              "status": "passed",
+              "duration": 1332000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ],
+    "id": "expense",
+    "metadata": {
+      "browser": {
+        "name": "No metadata.browser.name available",
+        "version": "No metadata.browser.version available"
+      },
+      "device": "Device name not known",
+      "platform": {
+        "name": "Android",
+        "version": "Version not known"
+      }
+    }
+  },
+  {
+    "keyword": "Feature",
+    "type": "feature",
+    "description": "",
+    "line": 1,
+    "name": "Income",
+    "uri": "/Users/siddarthkala/code/siddharth-kala/Task2/features/1_income.feature",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Able to add income",
+        "tags": [
+          {
+            "name": "@Income",
+            "astNodeId": "fa98b89e-67b5-481f-8878-ea6ad1bbd9ba"
+          }
+        ],
+        "id": "incomeable-to-add-income",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "User is on landing page",
+            "result": {
+              "status": "passed",
+              "duration": 3183000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "User clicks income button",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "User adds an income of 1000",
+            "result": {
+              "status": "passed",
+              "duration": 3386000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "User choose a category of Salary",
+            "result": {
+              "status": "passed",
+              "duration": 2916000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "User should view the balance is added with 1000",
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ],
+    "id": "income",
+    "metadata": {
+      "browser": {
+        "name": "No metadata.browser.name available",
+        "version": "No metadata.browser.version available"
+      },
+      "device": "Device name not known",
+      "platform": {
+        "name": "Android",
+        "version": "Version not known"
+      }
+    }
+  }
+]
