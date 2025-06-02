@@ -2,15 +2,13 @@
 
 ## Test Charter
 
-**Title:** Evaluating Core Functionalities and User Experience of Monefy App
-**Area Under Test:** Income & Expense Tracking, Manage currency & Catogory, Synchronization, Data correctness and User Interface
-**Goal:** Assess the app's usability and accessibility, feature set, and identify potential issues affecting user experience
-**Test Approach:** Manual exploratory testing for free and Pro and focusing on key functionalities and user interactions
+**Title:** Evaluating Core Functionalities and User Experience of Monefy App  
+**Area Under Test:** Income & Expense Tracking, Manage currency & Catogory, Synchronization, Data correctness and User Interface  
+**Goal:** Assess the app's usability and accessibility, feature set, and identify potential issues affecting user experience and core functionalities  
 
 ---
 
 ## Testing Charters
-
 
 | Feature                               | Description                                                                           | Expected Outcome                                                                                     | Actual Outcome                                                                                     | Status | Additional Details                                                                                                        |
 | ------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +25,7 @@
 | Synchronization/Subscription restore | Synchonise data in one device and access in another after purchase                    | Should be able to synchronise data in one device and then restore in another                         | Without authentication and authorisation cannot restore via new device                             | ❌     |                                                                                                                           |
 | Security                              | Enable the passcode protection and fingerprint                                        | Should be able to enable the passcode and fingerprint protection                                     | Not able to enable the passcode protection and fingerprint protection                              | ❌     |                                                                                                                           |
 | Data Correctness                      | Verify percentage correctness of expenses                                             | The percentage and piechart view should be correct                                                   | The percentage is correct                                                                          | ✅     |                                                                                                                           |
-| Accessibility                         | Run accessibility scans                                                               | No major accessibility critical issues should exists                                                 | Budget settings apply globally; lacks per-month customization                                      | ❌     |                                                                                                                           |
+| Accessibility                         | Run accessibility scans                                                               | No major accessibility critical issues should exists                                                 | Budget settings apply globally; lacks per-month customization                                      | 🔶     |                                                                                                                           |
 
 ---
 
@@ -37,10 +35,9 @@
 | Feature                        | Bug                                                                                                              | Details                                                                                                                                   |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | UI Interface                   | The initial user experience in the Monefy app is confusing and unintuitive.                                      | Some features available which doesnot work.                                                                                               |
-| Settings(Syncronization)       | After subscribing no option to unsubscribe<br />and unable to restore subscription in other device               |                                                                                                                                           |
+| Settings(Syncronization)       | After subscribing no option to unsubscribe               |                                                                                                                                           |
 | Passcode Protection            | Neither the passcode nor the fingerprint passcode can be enabled                                                 |                                                                                                                                           |
 | Settings(Syncronization)       | Can't find the way to restore the purchase made in other device.                                                 | Cannot retore the purchase in other device                                                                                                |
-| Income/Expense Management      | The currency conversion is not dynamic and have to be added manually                                             |                                                                                                                                           |
 | Income/Expense Management      | Budget can be set monthly only but<br />expense limit per day is calculate by divding by 30 in 1 day view       | ![Screenshot_20250531132421193_commonefyapplite.jpg](assets/Screenshot_2025-05-31-13-24-21-193_com.monefy.app.lite.jpg?t=1748708063324)  |
 | Income/Expense Management      | The currency conversion is not dynamic and have to be added manually                                             |                                                                                                                                           |
 | Income/Expense Management      | The currency conversion only works if in past<br />the conversion rate is added<br /> else raw numerics are used | ![Screenshot_20250531183135768_commonefyapplite.jpg](assets/Screenshot_2025-05-31-18-31-35-768_com.monefy.app.lite.jpg)                  |
@@ -59,7 +56,7 @@
 | ----------------------------------------- | -------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Income + Expense Management               | Highest  | Medium   | Core feature essential for app's primary purpose can be priority if there is critical bug                                                             |
 | User Interface Responsiveness             | Medium   | High     | Directly impacts user satisfaction and usability                                                                                                      |
-| Synchronization/Subscription Restore (P1) | High     | Highest  | No login, subscription cannot be restored there is a risk of loosing data                                                                             |
+| Synchronization/Subscription Restore | High     | Highest  | No login, subscription cannot be restored there is a risk of loosing data                                                                             |
 | Accessibility                             | Medium   | High     | Can be priotise if going to launch the app in EU location<br />as by June 28, 2025 <br />digital products needs to be WCAG 2.1 complaint as per EAA |
 | Security                                  | Medium   | Medium   | Useful feature depends on user complaints for priotization                                                                                            |
 | Data Correctness                          | Highest  | Low      | Most important feature but doesnot have critical bug                                                                                                  |
@@ -80,4 +77,3 @@
 ---
 
 > _Prepared by:_ **Siddharth Kala**
-> **
