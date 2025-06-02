@@ -1,0 +1,388 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "users;able-to-create-a-user",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "Able to create a user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 948458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I POST {\"id\":0,\"username\":\"sid\",\"firstNamer\":\"Siddharth\",\"lastName\":\"Kala\",\"email\":\"sidd@email.com\",\"password\":\"8793\",\"phone\":\"8793423239\",\"userStatus\":1} /user with header defaultHeader",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44278789
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Status should be 200",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1048333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Response body be like {\"id\":0,\"username\":\"sid\",\"firstNamer\":\"Siddharth\",\"lastName\":\"Kala\",\"email\":\"sidd@email.com\",\"password\":\"8793\",\"phone\":\"8793423239\",\"userStatus\":1}",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 896542
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "users;able-to-create-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Able to create multiple users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 219374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I POST [{\"id\":0,\"username\":\"multi1\",\"firstName\":\"Multi1\",\"lastName\":\"Kala\",\"email\":\"multi1@email.com\",\"password\":\"8793\",\"phone\":\"8793423239\",\"userStatus\":1},{\"id\":0,\"username\":\"multi2\",\"firstName\":\"Multi2\",\"lastName\":\"kala\",\"email\":\"multi2@email.com\",\"password\":\"8793\",\"phone\":\"8793423239\",\"userStatus\":1}] /user/createWithList with header defaultHeader",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6116958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Status should be 200",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 595832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Response body be like [{\"id\":0,\"username\":\"multi1\",\"firstName\":\"Multi1\",\"lastName\":\"Kala\",\"email\":\"multi1@email.com\",\"password\":\"8793\",\"phone\":\"8793423239\",\"userStatus\":1},{\"id\":0,\"username\":\"multi2\",\"firstName\":\"Multi2\",\"lastName\":\"kala\",\"email\":\"multi2@email.com\",\"password\":\"8793\",\"phone\":\"8793423239\",\"userStatus\":1}]",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 399665
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "users;able-to-login-and-logout",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "Able to login and logout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 224999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I FETCH XML /user/login?username=multi1&password=1234 with header {\"accept\": \"application/xml\"}",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9153165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Status should be 400",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1807624,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected was 400 but received status: 200\n    at World.<anonymous> (/app/features/step_definitions/user.steps.ts:44:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I GET /user/logout with header {\"accept\": \"application/xml\"}",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Status should be 400",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "users;able-to-login-and-logout",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Able to login and logout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I FETCH XML /user/login?username=multi1&password=8793 with header {\"accept\": \"application/xml\"}",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6811998
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Status should be 200",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 360666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I GET /user/logout with header {\"accept\": \"application/xml\"}",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8931165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Status should be 200",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172875
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "users;able-to-fetch-user",
+        "keyword": "Scenario Outline",
+        "line": 39,
+        "name": "Able to fetch user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 103583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I FETCH XML /user/multi3 with header {\"accept\": \"application/xml\"}",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6765791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Status should be 404",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Response body xml be like  if status is 404",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1511292
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "users;able-to-fetch-user",
+        "keyword": "Scenario Outline",
+        "line": 40,
+        "name": "Able to fetch user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I FETCH XML /user/multi1 with header {\"accept\": \"application/xml\"}",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5708084
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Status should be 200",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Response body xml be like user_data_valid.xml if status is 200",
+            "match": {
+              "location": "features/step_definitions/user.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2435664
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "users",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Users",
+    "tags": [],
+    "uri": "features/user.feature"
+  }
+]

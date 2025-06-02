@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="1.183" tests="6" skipped="0" failures="1" errors="0" timestamp="2025-06-02T18:51:55.533Z">
+  <testcase classname="Users" name="Able to create a user - #1.1" time="0.048">
+    <system-out><![CDATA[When I POST {"id":0,"username":"sid","firstNamer":"Siddharth","lastName":"Kala","email":"sidd@email.com","password":"8793","phone":"8793423239","userStatus":1} /user with header defaultHeader..passed
+Then Status should be 200...................................................passed
+Then Response body be like {"id":0,"username":"sid","firstNamer":"Siddharth","lastName":"Kala","email":"sidd@email.com","password":"8793","phone":"8793423239","userStatus":1}..passed]]></system-out>
+  </testcase>
+  <testcase classname="Users" name="Able to create multiple users - #1.1" time="0.008">
+    <system-out><![CDATA[When I POST [{"id":0,"username":"multi1","firstName":"Multi1","lastName":"Kala","email":"multi1@email.com","password":"8793","phone":"8793423239","userStatus":1},{"id":0,"username":"multi2","firstName":"Multi2","lastName":"kala","email":"multi2@email.com","password":"8793","phone":"8793423239","userStatus":1}] /user/createWithList with header defaultHeader..passed
+Then Status should be 200...................................................passed
+Then Response body be like [{"id":0,"username":"multi1","firstName":"Multi1","lastName":"Kala","email":"multi1@email.com","password":"8793","phone":"8793423239","userStatus":1},{"id":0,"username":"multi2","firstName":"Multi2","lastName":"kala","email":"multi2@email.com","password":"8793","phone":"8793423239","userStatus":1}]..passed]]></system-out>
+  </testcase>
+  <testcase classname="Users" name="Able to login and logout - #1.1" time="0.012">
+    <failure type="AssertionError" message="Expected was 400 but received status: 200"><![CDATA[    at World.<anonymous> (/app/features/step_definitions/user.steps.ts:44:10)]]></failure>
+    <system-out><![CDATA[When I FETCH XML /user/login?username=multi1&password=1234 with header {"accept": "application/xml"}..passed
+Then Status should be 400...................................................failed
+When I GET /user/logout with header {"accept": "application/xml"}...........skipped
+Then Status should be 400...................................................skipped]]></system-out>
+  </testcase>
+  <testcase classname="Users" name="Able to login and logout - #1.2" time="0.017">
+    <system-out><![CDATA[When I FETCH XML /user/login?username=multi1&password=8793 with header {"accept": "application/xml"}..passed
+Then Status should be 200...................................................passed
+When I GET /user/logout with header {"accept": "application/xml"}...........passed
+Then Status should be 200...................................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Users" name="Able to fetch user - #1.1" time="0.009">
+    <system-out><![CDATA[When I FETCH XML /user/multi3 with header {"accept": "application/xml"}.....passed
+Then Status should be 404...................................................passed
+Then Response body xml be like  if status is 404............................passed]]></system-out>
+  </testcase>
+  <testcase classname="Users" name="Able to fetch user - #1.2" time="0.008">
+    <system-out><![CDATA[When I FETCH XML /user/multi1 with header {"accept": "application/xml"}.....passed
+Then Status should be 200...................................................passed
+Then Response body xml be like user_data_valid.xml if status is 200.........passed]]></system-out>
+  </testcase>
+</testsuite>

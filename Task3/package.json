@@ -1,0 +1,26 @@
+{
+  "name": "petstore-api-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js --require-module ts-node/register --require features/step_definitions/*.ts features/**/*.feature",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^22.15.29",
+    "@types/supertest": "^2.0.15",
+    "@types/xml2js": "^0.4.14",
+    "chai": "^5.2.0",
+    "cucumber-tsflow": "^3.0.1",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2",
+    "openapi-typescript": "^7.8.0",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "xml2js": "^0.6.2"
+  }
+}

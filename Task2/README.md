@@ -17,7 +17,6 @@ Automated monefy app tests for Android using WebdriverIO (WDIO) and Appium.
 Before running tests, ensure you have:
 
 - **Node.js** (v14+) and **npm** installed
-
 - **git** installed
 - **Android SDK Platform Tools** installed, with `adb` in your system PATH
 - A connected **Android device** with USB debugging enabled, or a running **Android emulator**
@@ -35,7 +34,7 @@ Follow these steps to install the app, start services, and run your tests:
 1. **Clone the repo**
    ```git clone https://github.com/siddharth23/siddharth-kala.git```
 2. **Change directory**
-   ```cd Task2 #if not already```
+   ```cd Task2```
 3. **Install the app APKs**
    App uses multiple APK files (base + split APKs). Install them on the device or emulator with:
    ```adb install-multiple ./assets/base.apk ./assets/split_config.*.apk```
